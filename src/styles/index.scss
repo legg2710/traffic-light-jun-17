@@ -1,29 +1,30 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-button {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-}
-.green-bulb {
-    background-color: green
-}
-.yellow-bulb {
-    background-color: yellow
-}
-.red-bulb {
-    background-color: red
-}
-.light-on {
-    box-shadow:#f8ffcc 0px 0px 50px 20px;
+.box-stick {
+    width: 20px;
+    height: 150px;
+    background-color: black;
+    margin-left: 142px;
 }
 .box {
     width: 200px;
     height: 400px;
     background-color: black;
-    display: auto;
     border-radius: 30px;
-}
-.text-center {
+    margin-left: 50px;
+    padding: 37px;
     
+    
+}
+.semaforo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 40px;
+    cursor: pointer;
+    &.red {background-color: red; display: block}
+    &.yellow {background-color: yellow; display: block}
+    &.green {background-color: green; display: block}
+    &.light {box-shadow: #f8ffcc 0px 0px 50px 20px;}
 }

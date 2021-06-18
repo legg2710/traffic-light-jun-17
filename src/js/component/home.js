@@ -8,31 +8,22 @@ export function Home() {
 	const [color, setColor] = useState("green");
 	return (
 		<div className="text-center">
-			<span> {"color"} </span>
-			<div>
-				{""}
-				<button
-					className={`green-bulb ${
-						color === "green-bulb" ? "light-on" : ""
+			<div className="box-stick"></div>
+			<div className="box">
+				<div
+					className={`semaforo green ${
+						color === "green" ? "light" : ""
 					}`}
-					onClick={() => setColor("green-bulb")}></button>{" "}
-			</div>
-			<div>
-				<button
-					className={`yellow-bulb ${
-						color === "yellow-bulb" ? "light-on" : ""
+					onClick={() => setColor("green")}></div>
+				<div
+					className={`semaforo yellow ${
+						color === "yellow" ? "light" : ""
 					}`}
-					onClick={() => setColor("yellow-bulb")}></button>{" "}
+					onClick={() => setColor("yellow")}></div>
+				<div
+					className={`semaforo red ${color === "red" ? "light" : ""}`}
+					onClick={() => setColor("red")}></div>
 			</div>
-			<div>
-				<button
-					className={`red-bulb ${
-						color === "red-bulb" ? "light-on" : ""
-					}`}
-					onClick={() => setColor("red-bulb")}></button>{" "}
-			</div>
-
-			<div className="box"></div>
 		</div>
 	);
 }
